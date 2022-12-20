@@ -1,0 +1,29 @@
+<html>
+<head>
+      <title>Home CSRF starter</title>
+</head>
+<body>
+    <% if (user?.name) { %>
+        <h2>
+            Logged in as: <%= user?.name %>
+        </h2>
+            <a href="posts" alt="">Posts</a>
+            <a href="logout" alt="">Logout</a>
+            <a href="deleteAccount" alt="">Delete account</a>
+            <%} else { %>
+            <div>
+            </div>
+            <h2>
+                Not logged in
+            </h2>
+            <a href="posts" alt="">Posts</a>
+            <a href="login" alt="">Login</a>
+        <% } %>
+    <h2 style="margin-bottom: 5px;">Users</h2>
+    <% for(var i=0; i < users?.length; i++) { %>
+    <div>
+         <div>- <%= users[i]?.name %></div>
+    </div>
+    <% } %>
+</body>
+</html>

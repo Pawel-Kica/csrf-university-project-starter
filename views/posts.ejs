@@ -1,0 +1,20 @@
+
+<html>
+<head>
+      <title>Posts</title>
+</head>
+<body>
+    <h2>
+        Posts
+    </h2>
+    <a href="/" alt="">Home</a>
+    <a href="addPost" alt="">Add post</a>
+    <% for(var i=0; i < posts?.length; i++) { %>
+    <div style="border: 1px solid black; margin:10px 0px; padding:5px;">
+         <div><%= posts[i]?.title%></div>
+         <div style="font-size: 0.8rem; color:#333; margin:5px 0">Author: <%= posts[i]?.user%></div>
+         <div><%= posts[i]?.content %></div>
+    </div>
+    <% } %>
+</body>
+</html>
