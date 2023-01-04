@@ -22,7 +22,7 @@ let posts = [
     {
         user: 'admin',
         title: 'Welcome to my blog',
-        content: `Hello everyone, my name is Pawel nad I'm the author of this blog. Enjoy :D`,
+        content: `Hello everyone, my name is Pawel and I'm the author of this blog. Enjoy :D`,
     },
 ];
 
